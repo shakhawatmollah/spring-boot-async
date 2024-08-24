@@ -1,0 +1,4 @@
+I wanted to see how fast I could add real-time comments to my website.
+With over 20 years of experience in the industry
+Finished Spring Data repository scanning in 51 ms. Found 1 MongoDB repository interface.
+Write data com.shakhawat.springbootasync.model.FileData@39c49b4a to File

@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "ce3343df-d4b5-46ba-8f39-f9dd19c600f5",
+		"name": "spring-boot-async",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4743469"
+	},
+	"item": [
+		{
+			"name": "Save Customer (Sync)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Shakhawat\",\r\n    \"role\":\"USER\",\r\n    \"age\":\"40\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sync/customers/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sync",
+						"customers",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Customer (Async)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Shakhawat Hossain\",\r\n    \"role\":\"ADMIN\",\r\n    \"age\":\"40\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/async/customers/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"async",
+						"customers",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Write File (Sync)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\":\"With over 20 years of experience in the industry\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sync/file/write",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sync",
+						"file",
+						"write"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Write File (Async)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\":\"Write data com.shakhawat.springbootasync.model.FileData@39c49b4a to File\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/async/file/write",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"async",
+						"file",
+						"write"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read File (Sync)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sync/file/read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sync",
+						"file",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read File (Async)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/async/file/read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"async",
+						"file",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer (Sync)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sync/customers/Shakhawat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sync",
+						"customers",
+						"Shakhawat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer (Async)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sync/customers/Shakhawat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sync",
+						"customers",
+						"Shakhawat"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
