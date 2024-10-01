@@ -46,4 +46,10 @@ public class AsyncController {
         return asyncService.writeFile(fileData);
     }
 
+    @GetMapping("/run-async-task")
+    public String runAsyncTask() {
+        asyncService.executeAsyncTask();
+        return "Task execution started.";
+    }
+
 }

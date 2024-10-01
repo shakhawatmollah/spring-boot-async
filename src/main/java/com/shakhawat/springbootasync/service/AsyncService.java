@@ -49,4 +49,16 @@ public class AsyncService {
         return CompletableFuture.completedFuture(result);
     }
 
+    @Async("asyncTaskExecutor")
+    public void executeAsyncTask() {
+        log.info("Executing task in thread: " + Thread.currentThread().getName());
+        // Simulate some processing
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+        log.info("Task completed in thread: " + Thread.currentThread().getName());
+    }
+
 }
