@@ -23,7 +23,7 @@ public class FileService {
     String fileName;
 
     public String readFile() {
-        log.info("Reading the file using Asynch thread");
+        log.info("Reading the file using Async thread");
         List<String> list = new ArrayList<>();
 
         try (BufferedReader br = Files.newBufferedReader(Paths.get(fileName))) {

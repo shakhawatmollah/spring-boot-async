@@ -24,8 +24,7 @@ public class AsyncController {
     @GetMapping("/customers/{name}")
     public CompletableFuture<List<Customer>> getCustomerByName(@PathVariable String name) {
         log.info("Getting customer by name {} ", name);
-        CompletableFuture<List<Customer>> listCompletableFuture = asyncService.getCustomerByName(name);
-        return listCompletableFuture;
+        return asyncService.getCustomerByName(name);
     }
 
     @PostMapping("/customers/save")

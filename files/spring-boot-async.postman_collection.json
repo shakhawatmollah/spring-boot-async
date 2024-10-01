@@ -243,16 +243,48 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/sync/customers/Shakhawat",
+					"raw": "http://localhost:8080/async/customers/Shakhawat",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"sync",
+						"async",
 						"customers",
 						"Shakhawat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Run Test Async Task",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/async/run-async-task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"async",
+						"run-async-task"
 					]
 				}
 			},
